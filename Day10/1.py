@@ -1,6 +1,3 @@
-from os import lseek
-
-
 f = open('Day10/input.txt', 'r')
 
 lines = f.readlines()
@@ -49,7 +46,6 @@ for i in lines:
                 valid = False
                 break
     if valid:
-        print(lastOpened)
         autocorrectScore = 0
         while len(lastOpened) > 0:
             autocorrectScore *= 5
